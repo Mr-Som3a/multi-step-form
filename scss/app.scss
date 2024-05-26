@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+body{
+    background-color: hsl(207, 85%, 89%);
+    .page{
+        .steps{
+            background:no-repeat url('../assets/images/bg-sidebar-mobile.svg');
+            height:13rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .step_container{
+                .step{
+                    width: 2.2rem;
+                    height: 2.2rem;
+                    margin: 3rem .8rem 1.2rem;
+                    border-radius: 100%;
+                    border:.05rem solid white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                }
+                .active{
+                    background-color: hsl(207, 85%, 89%);
+                    color: black;
+                }
+                .stepInfo{
+                    display: none;
+                }
+            }
+        }
+        form{
+            position: relative;
+            top: -6rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 90%;
+            margin: 0 auto;
+
+            .btn_section{
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1.5rem;
+                margin-top: 5rem;
+                width: 100%;
+                a{
+                    // text-decoration: none;
+                    color: hsl(231, 11%, 63%);
+                }
+                .btn{
+                    background-color:  hsl(213, 96%, 18%);
+                    border:none;
+                    width:100px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+@media (min-width:620px) {
+    body{
+        background-color: rgb(226, 245, 239);
+        margin-top: 5rem;
+        .page{
+            display: flex;
+            background-color: white;
+            border-radius: 1rem;
+            margin: auto;
+            padding: 0.8rem;
+            height: fit-content;
+            width:60% ;
+            .steps{
+                background:no-repeat url('../assets/images/bg-sidebar-desktop.svg');
+                background-size: contain;
+                width: 20rem;
+                display: flex;
+                justify-content: flex-start;
+                height: 30rem;
+                flex-direction: column;
+                padding: 1rem;
+                .step_container{
+                    display: flex;
+                    align-items: center;
+                    font-size: 0.9rem;
+                    .step{
+                        width: 2rem;
+                        height: 2rem;
+                        margin: 1rem 1rem 1rem;
+                        border-radius: 100%;
+                        border:.05rem solid white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                    }
+                    .stepInfo{
+                        display: block;
+                        height: fit-content;
+                        color: white;
+                        p{
+                            margin: 0;
+                            color: rgb(209, 208, 208);
+                        }
+                    }
+                }
+            }
+            form{
+                top: 0rem;
+                // width: fit-content ;
+                margin: 0 ;
+                justify-content: space-between;
+                
+                .btn_section{
+                    background-color: rgba(255, 255, 255, 0);
+                    height: fit-content;
+                    bottom: 0rem;
+                    margin-top: 0rem;
+                }
+            }
+        }
+    }
+}

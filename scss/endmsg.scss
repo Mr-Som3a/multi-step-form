@@ -1,0 +1,36 @@
+.endmsg{
+    padding: 1.5rem 1.3rem ;
+    height: fit-content;
+    background-color: white;
+    border-radius: 0.8rem;
+    text-align: center;
+    position: relative;
+    top: 12rem;
+
+    img{
+        width: 5rem;
+        height: 5rem;
+        margin: 1.5rem 0 ;
+        
+    }
+    h2{
+        font-weight: 700;
+        color: hsl(213, 96%, 18%);
+    }
+    p{
+        color: hsl(231, 11%, 63%);
+    }
+}
+@media (min-width:620px){
+    .page{
+        .endmsg{
+            // height: fit-content; 
+            top: 4rem;
+            margin: 0 auto;
+            position: static;
+            width: 60%;
+        }
+    }
+    
+    
+}
