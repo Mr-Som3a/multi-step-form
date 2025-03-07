@@ -9,7 +9,9 @@ import FinishingUp from './components/finishigUp';
 import Endmsg from './components/endMsg';
 import '../scss/app.scss';
 import { useMyContext } from './contextProvider';
-
+import IconArcade from "/assets/images/icon-arcade.svg"
+import IconAdvanced from "/assets/images/icon-advanced.svg"
+import IconPro from "/assets/images/icon-pro.svg"
 
 const serviceReducer = (state, action) => {
   switch (action.type) {
@@ -82,20 +84,20 @@ function App() {
       planName: "Acrade",
       monthly: 9,
       yearly:90,
-      img: "/assets/images/icon-arcade.svg",
+      img: IconArcade,
       pp:4
     },
     plan2: {
       planName: "Advanced",
       monthly: 12,
       yearly:120,      //:[12,120],
-      img: "/assets/images/icon-advanced.svg" 
+      img: IconAdvanced 
     },
     plan3: {
       planName: "Pro",
       monthly: 15,
       yearly:150,    //: [15,150],
-      img: "/assets/images/icon-pro.svg" 
+      img: IconPro 
     }
   }
   const services = {
