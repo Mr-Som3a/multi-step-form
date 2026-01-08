@@ -1,5 +1,8 @@
 import { useState, useReducer } from 'react'
 import { useForm } from 'react-hook-form';
+import arcadeImg from "../assets/images/icon-arcade.svg"
+import advancedImg from "../assets/images/icon-advanced.svg"
+import proImg from "../assets/images/icon-pro.svg"
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import Registration from './components/registration';
@@ -82,20 +85,20 @@ function App() {
       planName: "Acrade",
       monthly: 9,
       yearly:90,
-      img: "/assets/images/icon-arcade.svg",
+      img: arcadeImg,
       pp:4
     },
     plan2: {
       planName: "Advanced",
       monthly: 12,
       yearly:120,      //:[12,120],
-      img: "/assets/images/icon-advanced.svg" 
+      img: advancedImg 
     },
     plan3: {
       planName: "Pro",
       monthly: 15,
       yearly:150,    //: [15,150],
-      img: "/assets/images/icon-pro.svg" 
+      img: proImg 
     }
   }
   const services = {
